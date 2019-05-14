@@ -1,0 +1,23 @@
+.advice {
+  padding: 120px 0 150px;
+  background: #ebebeb url("../img/bg-advice.jpg") no-repeat 50% 50% / cover;
+  @media (max-width: $breakpoint-small) {
+    padding: 50px 0 80px;
+  }
+}
+
+.advice__title {
+  margin-bottom: 60px;
+}
+
+.advice__list {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 240px);
+  grid-gap: 110px;
+  justify-content: center;
+  list-style: none;
+  @media (max-width: $breakpoint-small) {
+    grid-gap: 70px;
+  }
+}

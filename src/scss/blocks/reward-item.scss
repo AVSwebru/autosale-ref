@@ -1,0 +1,25 @@
+.reward-item {
+  padding: 155px 70px 20px;
+  background: #e4e4e4 no-repeat 50% 55px;
+  text-align: center;
+  &_card {
+    background-image: url("../img/purse.svg");
+  }
+  &_mobile {
+    background-image: url("../img/mobile.svg");
+  }
+  &_electronic-money {
+    background-image: url("../img/emoney.svg");
+  }
+  @media (max-width: $breakpoint-small) {
+    padding-top: 130px;
+    background-position-y: 55px;
+  }
+}
+
+.reward-item__title {
+  margin: 0;
+  color: #0c243c;
+  font-size: 24px;
+  line-height: 1.1;
+}

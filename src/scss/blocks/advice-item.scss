@@ -1,0 +1,29 @@
+.advice-item {
+  padding-left: 50px;
+}
+
+.advice-item__title {
+  position: relative;
+  margin-bottom: 25px;
+  color: #0c243c;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -50px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/check.svg") no-repeat 50% 50%;
+  }
+}
+
+.advice-item__desc {
+  color: #0c243c;
+  a {
+    color: #0c243c;
+    text-decoration: underline;
+  }
+}

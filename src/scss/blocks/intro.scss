@@ -1,0 +1,37 @@
+.intro {
+  background: #343841 url("../img/bg-intro.jpg") no-repeat 50% 50% / cover;
+}
+
+.intro__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 750px;
+  @media (max-width: $breakpoint-small) {
+    min-height: 100vh;
+  }
+}
+
+.intro__title-block {
+  text-align: center;
+}
+
+.intro__subtitle {
+  display: block;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 48px;
+  @media (max-width: $breakpoint-small) {
+    font-size: 40px;
+  }
+}
+
+.intro__title {
+  display: block;
+  color: #3be2a5;
+  font-size: 90px;
+  line-height: 1.04;
+  @media (max-width: $breakpoint-small) {
+    font-size: 50px;
+  }
+}

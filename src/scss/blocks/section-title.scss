@@ -1,0 +1,14 @@
+.section-title {
+  text-align: center;
+  font-size: 60px;
+  line-height: 1;
+  &_dark {
+    color: #0c243c;
+  }
+  &_light {
+    color: #fffefe;
+  }
+  @media (max-width: $breakpoint-small) {
+    font-size: 40px;
+  }
+}

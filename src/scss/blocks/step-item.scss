@@ -1,0 +1,68 @@
+.step-item {
+  position: relative;
+  counter-increment: steps-counter;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &_advice {
+    .step-item__img {
+      background-image: url("../img/bg-step-advice.jpg");
+    }
+  }
+  &_buyout {
+    .step-item__img {
+      background-image: url("../img/bg-step-buyout.jpg");
+    }
+  }
+  &_money {
+    .step-item__img {
+      background-image: url("../img/bg-step-money.jpg");
+    }
+  }
+  &::before {
+    content: counter(steps-counter);
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100px;
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #32d99c, #44ebae);
+    box-shadow: 8px 8px 24px 0 rgba(5, 70, 46, 0.35);
+    color: #212123;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 1;
+    @media (max-width: $breakpoint-small) {
+      top: 150px;
+      left: 0;
+      width: 80px;
+      height: 85px;
+    }
+  }
+}
+
+.step-item__img {
+  height: 210px;
+  background: no-repeat 50% 50% / cover;
+}
+
+.step-item__text {
+  padding: 35px 40px;
+  background-color: #212123;
+  @media (max-width: $breakpoint-small) {
+    padding: 35px 30px;
+  }
+}
+
+.step-item__title {
+  margin-bottom: 15px;
+  color: #e1e1e1;
+  font-size: 24px;
+}
+
+.step-item__desc {
+  color: #e1e1e1;
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #42e8ab;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle cx="20" cy="20" r="20" fill="#27485d"/>
+  <path id="Фигура_5" data-name="Фигура 5" class="cls-1" d="M480.75,1820.24a20.01,20.01,0,1,0,20.01,20.01,20.014,20.014,0,0,0-20.01-20.01h0Zm-2.828,29.44-9.432-9.43,3.766-3.78,5.666,5.67,11.309-11.32,3.778,3.78Zm0,0" transform="translate(-460.75 -1820.25)"/>
+</svg>

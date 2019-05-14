@@ -1,0 +1,47 @@
+.workflow {
+  padding: 75px 0 100px;
+  background: #323435 url("../img/bg-workflow.jpg") no-repeat 50% 50% / cover
+    fixed;
+}
+
+.workflow__title {
+  margin-bottom: 45px;
+}
+
+.workflow__list {
+  @include reset-list;
+  text-align: center;
+}
+
+.workflow__item {
+  display: inline-block;
+  width: 620px;
+  box-sizing: border-box;
+  padding: 20px 90px;
+  border: 1px solid #d0d0d0;
+  position: relative;
+  margin-bottom: 70px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 50px;
+    background: url("../img/arrow.svg") 50% 50% no-repeat;
+  }
+  @media (max-width: $breakpoint-medium) {
+    width: 590px;
+  }
+  @media (max-width: $breakpoint-small) {
+    width: 100%;
+    padding: 20px;
+  }
+}
